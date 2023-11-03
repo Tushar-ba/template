@@ -1,0 +1,712 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --verydarkgreen:#435334;
+    --darkgreen:#9EB384;
+    --green:#CEDEBD;
+    --notgreen:#FAF1E4;
+    --pl:5rem;
+}
+html body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--notgreen);
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+
+p{
+    padding-block: 10px;
+    font-size: 30px;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+h3{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+.flex{
+    display: flex;
+}
+
+/* -------------------utilities end here------------- */
+nav{
+    padding-right: var(--pl);
+    padding-left:var(--pl);
+    justify-content: space-between;
+    color: var(--verydarkgreen);
+    padding-top: 1rem;
+    background-color: var(--darkgreen);
+    height: 100px;
+    flex-grow: 1;
+    position: relative;
+}
+.navleft img{
+    width: 150px;
+}
+.navleft{
+    justify-content: center;
+    align-items: center;
+}
+.navright ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.navright li{
+    transition: 0.5s;
+}
+.navright li:hover{
+    background-color: var(--notgreen);
+    border-radius: 15px;
+    width: 100px;
+    padding: 10px;
+    box-shadow:10px 10px 0px rgba(0, 0, 0, 0.5);
+    /* top : -5px;
+    left :-5px */
+}
+.hamburger{
+    display: none;
+}
+
+/* .navright ul:hover{
+    text-decoration: underline;
+    transition: 3s;
+} */
+/*   -------------nav bar ends here ------------ */
+.gallery{
+    width: 100%;
+    height: 100vh;
+    background-image: url(photos/wallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position-x: center; */
+    /* border-radius: 55% 45% 68% 32% / 47% 75% 25% 53%  ; */
+}
+/* about section */
+#about_us{
+    padding-right: var(--pl);
+    padding-left:var(--pl) ;
+    padding-bottom: 2rem;
+    flex-direction: column;
+}
+
+#about_us h1{
+    text-align: center !important;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.about{
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.about img{
+    width: 500px;
+    height: 200px;
+}
+/* -----about ends owner section starts------ */
+.own{
+    background-color: var(--darkgreen);
+    padding-block: 20px;
+}
+.own h1{
+    padding-bottom: 10px;
+}
+.owner{
+    padding-left:var(--pl);
+    padding-right: var(--pl);
+    flex-direction: row-reverse;
+    background-color: var(--darkgreen);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.ownerimage img{
+    width: 100%;
+}
+.ownerinfo li{
+    list-style: disc;
+}
+
+.ownerinfo{
+    width: 40vw;
+}
+/* why us section */
+.whyus{
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-block: 20px;
+}
+.whyus h1{
+    padding-bottom: 10px;
+}
+.why{
+    justify-content: center;
+    align-items: center;
+}
+.whyleft{
+    width: 50vw;
+    flex-wrap:nowrap;
+    text-align: center;
+    gap: 30px;
+}
+.whyleft img{
+    width: 50px;
+}
+.box-1{
+    flex-direction: column;
+    gap: 10px;
+}
+.box-2{
+    flex-direction: column;
+    gap: 12px;
+}
+.whyright ul{
+    list-style: disc !important;
+}
+.whyright{
+    width: 50vw;
+}
+.projects{
+     padding-right: var(--pl);
+    padding-left: var(--pl); 
+    flex-direction: column;
+    background-image: url(photos/wallpaper.png);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.projectcards{
+    justify-content: center;
+    align-items: center;
+    gap: 90px
+}
+.projects h1{
+    padding:0;
+}
+.p1{
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffff;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 20px;
+    color: #000;
+    transition: 0.5s;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.p1:hover{
+    box-shadow:10px 10px 0px #000;
+    top : -5px;
+    left :-5px
+}
+.p2{
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffff;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 20px;
+    color: #000;
+    transition: 0.5s;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.p2:hover{
+    box-shadow:10px 10px 0px #000;
+    top : -5px;
+    left :-5px
+}
+
+.loans{
+    flex-direction: column;
+    padding-right: var(--pl);
+    padding-left: var(--pl);
+    text-align: center;
+    gap:10px;
+    padding-block: 20px;
+}
+.loans h1{
+    padding-bottom:10px
+}
+
+.banklogos img{
+    width: 90px;
+    height: 70px;
+}
+.banklogos{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.massterplan{
+    padding-left: var(--pl);
+    padding-right: var(--pl);
+    padding-block: 20px;
+    background-color: var(--darkgreen);
+}
+.massterplan h1{
+    padding-bottom: 10px;
+}
+.mpcontainer{
+    gap: 20px;
+    justify-content: center;
+    align-items: center ;
+}
+.mpr th,td{
+    border: 1px solid #000;
+    text-align: left;
+    padding: 8px;
+}
+
+.mpr h3{
+    background-color: var(--notgreen);
+    font-weight: 500;
+    text-align: center;
+}
+.mpl img{
+    width: 100%;
+    height: 50vh;
+}
+.mpr{
+    width: 70vw;
+}
+#approvals{
+    padding-left: var(--pl);
+    padding-right: var(--pl);
+    text-align:center;
+    padding: 20px;
+}
+.appopics img{
+width: 150px;
+height: 150px;
+justify-content: space-evenly;
+}
+
+.appopics{
+justify-content: space-between;
+padding-left: var(--pl);
+padding-right: var(--pl);
+}
+
+/* amenities section */
+.ap{
+    padding-block: 30px;
+    padding-right:var(--pl);
+    padding-left: var(--pl);
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 30px;
+    background-color: var(--darkgreen);
+    /* margin-top: 30px; */
+}
+.ap li{
+    list-style: disc;
+    padding: 5px;
+}
+
+/* contact form */
+.contact{
+    /* background-color: var(--green); */
+    padding-left: var(--pl);
+    padding-right: var(--pl);
+    text-align: left;
+    ;
+}
+.contact h1{
+    text-align: center;
+}
+.contact p{
+    font-size: 20px;
+    color: #000
+}
+.contact .row {
+    margin: 60px 0 90px;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+  }
+  
+  .contact .row .col {
+    padding: 0 10px;
+    width: calc(100% / 2 - 50px);
+  }
+  
+  .contact .col p {
+    margin-bottom: 10px;
+  }
+  
+  .contact .col p i {
+    color: #7a7a7a;
+    margin-right: 10px;
+  }
+  
+  .contact form input {
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #bfbfbf;
+  }
+  
+  .contact form textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    height: 150px;
+    outline: none;
+    resize: vertical;
+    border: 1px solid #bfbfbf;
+  }
+  
+  .contact form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #333;
+    transition: 0.2s ease;
+  }
+  
+  .contact form button:hover {
+    background: #525252;
+  }
+  @keyframes slide-fade-in{
+    from{
+        opacity: 0;
+        transform: translateY(5vh);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .about_us, .banklogos, .own, .whyus, .video, .projects, .p2, .p1, .loans,
+    .about, .pic, .aboutpara,.whyus,
+    .why, .whyleft , .whyright, .projectcards,  .approvals,.appo,.appopics
+    .ap, .ph{
+        view-timeline-name: --item-timeline;
+        animation: slide-fade-in both;
+        animation-timeline: --item-timeline;
+        animation: contain 90% and 100%;
+    }
+  }
+  @media (prefers-reduced-motion: no-preference){
+   .massterplan,
+    .contact{
+        view-timeline-name: --item-timeline;
+        animation: slide-fade-in both;
+        animation-timeline: --item-timeline;
+        animation: contain 90% and 100%;
+    }
+  }
+
+  @media  screen and (max-width:821px) {
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    li{
+        list-style: none;
+    }
+    
+    p{
+        padding-block: 10px;
+        font-size: 30px;
+    }
+    h1{
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    h2{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    h3{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    
+    .nav{
+        width: auto;
+    }
+    .gallery img{
+        width: 800px;
+        height: 100vh;
+    }
+    .navright {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--notgreen);
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+    }
+    .navright ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--notgreen);
+        left: 0;
+        top: 100%;
+        width: 100%;
+    }
+    .navright.active{
+        left: 0;
+        transition: 0.4s ease;
+    }
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    .projectcards{
+        gap: 45px;
+    }
+    .projects{
+        padding-block: 30px;
+    }
+
+  }
+
+  @media screen and (max-width:400px){
+    html body{
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        background-color: var(--notgreen);
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    li{
+        list-style: none;
+    }
+    
+    p{
+        padding-block: 10px;
+        font-size: 25px;
+    }
+    h1{
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    h2{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    h3{
+        font-size: 0.5rem;
+        font-weight: 300;
+    }
+    .about_us{
+        flex-direction: column;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about img{
+        width: 350px;
+        height: 150px;
+    }
+    .appopics img{
+        flex-wrap: wrap;
+        width: 75px;
+        height: 75px;
+    }
+    .row{
+        margin: 0;
+        padding-left: var(--pl);
+        padding-right: var(--pl);
+        flex-direction: column;
+    }
+    .content a {
+        font-size: 17px;
+        padding: 9px 20px;
+      }
+    
+      .contact .row {
+        flex-direction: column;
+      }
+    
+      .contact .row .col {
+        width: 100%;
+      }
+    
+      .contact .row .col:last-child {
+        margin-top: 40px;
+      }
+      .contact{
+        padding: 0 0 200px;
+      }
+      :root{
+        --verydarkgreen:#435334;
+        --darkgreen:#9EB384;
+        --green:#CEDEBD;
+        --notgreen:#FAF1E4;
+    }
+    .why{
+        flex-direction: column;
+    }
+    .whyus{
+        padding-right: var(--pl);
+        padding-left:var(--pl)
+    }
+    .gallery{
+        width: 100%;
+        height: 60vh;
+    }
+    .owner{
+        flex-direction: column;
+        padding-left: var(--pl);
+        padding-right: var(--pl);
+    }
+    .ownerinfo{
+        width: auto;
+    }
+    .whyright p{
+        font-size: 12px !important;
+    }
+    .whyright ul{
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .whyright{
+        width: auto;
+    }
+    .whyright h2{
+        font-size: 15px !important;
+
+    }
+    .banklogos img{
+        width: 55px;
+        height: 45px;
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+    .banklogos{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .am li{
+        font-size: 10px;
+    }
+    .ph li{
+        font-size: 10px;
+    }
+    .ap h2{
+        font-size: 15px;
+    }
+    .mpl img{
+        width: 100%;
+        height: 30vh;
+        padding: 10px;
+    }
+    .mpr h2{
+        background-color: var(--notgreen);
+        border-radius: 5px;
+        margin:0 var(--pl) 10px;
+        padding: 6px;
+        text-align: center;
+    }
+    .contact-details{
+        font-size: 1px;
+    }
+  }
+  
+
+  @media screen and (max-width:817px){
+    html body{
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        background-color: var(--notgreen);
+    }
+
+    .projectcards{
+        flex-direction: column;
+    }
+    .mpcontainer{
+        flex-direction: column;
+    }
+    :root{
+        --pl:2rem;
+    }
+    .mpcontainer{
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects{
+        /* padding-right: var(--pl);
+        padding-left: var(--pl); */
+        flex-direction: column;
+        background-image: url(photos/wallpaper.png);
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-size: cover;
+    }
+    .massterplan{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mpr{
+        width: auto;
+    }
+  }
+  
